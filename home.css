@@ -17,42 +17,44 @@ body{
 
 .wrapper{
   display: flex;
-  flex-direction:column;
+  flex-direction: column;
 }
 
 .wrapper .static-txt{
   color: white;
-  font-size: 60px;
+  font-size: 4vh;
   font-weight: 400;
 }
 
+/* TODO fix styling for mobile */
 .wrapper .dynamic-txts{
-  margin-left: 15px;
-  height: 90px;
-  line-height: 90px;
+  margin-left: 1vh;
+  height: 6.2vh;
+  line-height: 6.2vh;
   overflow: hidden;
 }
 
 .dynamic-txts li{
   list-style: none;
   color: #B5FFE9;
-  font-size: 60px;
+  font-size: 4vh;
   font-weight: 500;
   position: relative;
   top: 0;
   animation: slide 12s steps(4) infinite;
 }
 
+/* TODO fix styling for mobile */
 @keyframes slide {
   100%{
-    top: -360px;
+    top: -24.8vh;
   }
 }
 
 .dynamic-txts li span{
   position: relative;
-  margin: 5px 0;
-  line-height: 90px;
+  margin: 0;
+  line-height: 6vh;
 }
 
 .dynamic-txts li span::after{
