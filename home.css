@@ -8,9 +8,6 @@
 }
 
 body{
-  display: flex;
-  align-items: center;
-  justify-content: center;
   min-height: 100vh;
   background: #444545;
 }
@@ -29,8 +26,8 @@ body{
 /* TODO fix styling for mobile */
 .wrapper .dynamic-txts{
   margin-left: 1vh;
-  height: 6.2vh;
-  line-height: 6.2vh;
+  height: 6vh;
+  line-height: 6vh;
   overflow: hidden;
 }
 
@@ -47,7 +44,7 @@ body{
 /* TODO fix styling for mobile */
 @keyframes slide {
   100%{
-    top: -24.8vh;
+    top: -24vh;
   }
 }
 
@@ -75,4 +72,27 @@ body{
   100%{
     left: 0;
   }
+}
+
+#birds-bg {
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+.test {
+  width: 100%;
+  text-align: center;
+  font-size: 4vh;
+  color: white;
+  font-weight: 400;
+}
+#typed {
+  font-weight: 500 !important;
+  color: #B5FFE9;
+}
+.typed-cursor {
+  color: #B5FFE9;
 }

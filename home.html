@@ -12,8 +12,8 @@
     <link rel="icon" href="favicon.svg">
     <title>Danial Portfolio</title>
 </head>
-<body id="birds-bg">
-    <div class="wrapper">
+<body>
+    <!-- <div class="wrapper">
         <div class="static-txt animate__animated animate__fadeInLeft">Hi, I'm Danial!</div>
         <div style="display: flex;">
             <div class="static-txt animate__animated animate__fadeInLeft">I'm a</div>
@@ -24,36 +24,60 @@
                 <li><span>Hard Worker.</span></li>
             </ul>
         </div>
+    </div> -->
+    <div id="birds-bg">
+        <div class="test">
+            <p>Hi, I'm Danial!</p>
+            <p>I'm a <span id="typed"></span></p>
+        </div>
     </div>
 </body>
 
 <script>
     // uncomment for netlify
-    // if (performance.navigation.type == performance.navigation.TYPE_RELOAD) location.href = 'index';
-    if (performance.navigation.type == performance.navigation.TYPE_RELOAD) location.href = 'index.html';
+    if (performance.navigation.type == performance.navigation.TYPE_RELOAD) location.href = 'index';
+    // if (performance.navigation.type == performance.navigation.TYPE_RELOAD) location.href = 'index.html';
 </script>
+<script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r119/three.min.js" integrity="sha512-E1+SnTWyHYoY5MN8wpL0SI4TYbpWN12sHXyEViwbzzEyq6GHxQrPFDzEeUDab4emXcf3Yj41Tht2JZnpo3kjwA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 <script src="https://cdn.jsdelivr.net/npm/vanta@0.5.21/dist/vanta.birds.min.js"></script>
 <script>
     VANTA.BIRDS({
-  el: "#birds-bg",
-  mouseControls: true,
-  touchControls: true,
-  gyroControls: false,
-  minHeight: 200.00,
-  minWidth: 200.00,
-  scale: 1.00,
-  scaleMobile: 1.00,
-  backgroundColor: 0x444545,
-  color1: 0xCA7DF9,
-  color2: 0x6369D1,
-  birdSize: 1.50,
-  wingSpan: 25.00,
-  speedLimit: 4.00,
-  separation: 70.00,
-  alignment: 30.00,
-  cohesion: 50.00,
-  quantity: 2.00
-})
+    el: "#birds-bg",
+    mouseControls: true,
+    touchControls: true,
+    gyroControls: false,
+    minHeight: 100.00,
+    minWidth: 100.00,
+    scale: 1.00,
+    scaleMobile: 1.00,
+    backgroundColor: 0x444545,
+    color1: 0xCA7DF9,
+    color2: 0x6369D1,
+    birdSize: 1.50,
+    wingSpan: 25.00,
+    speedLimit: 4.00,
+    separation: 70.00,
+    alignment: 30.00,
+    cohesion: 50.00,
+    quantity: 2.00
+    })
+
+    var typed = new Typed('#typed', {
+    strings: [
+        "Web Developer",
+        "UX Designer",
+        "Techie"
+    ],
+    stringsElement: null,
+    typeSpeed: 100,
+    backSpeed: 100,
+    smartBackspace: true,
+    loop: true,
+    loopCount: Infinity,
+    showCursor: true,
+    cursorChar: "|",
+    autoInsertCss: true
+    })
 </script>
 </html>
