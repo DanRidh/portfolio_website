@@ -82,7 +82,7 @@ body{
   justify-content: center;
   flex-direction: column;
 }
-.test {
+.landing-text {
   width: 100%;
   text-align: center;
   font-size: 4vh;
@@ -95,4 +95,28 @@ body{
 }
 .typed-cursor {
   color: #B5FFE9;
+}
+
+@media only screen and (min-width: 992px) {
+  .navbar {
+    background-color: #444545 !important;
+    box-shadow: 0 2px 0 0 #4A4A4A !important;
+  }
+
+  .navbar-options {
+    color: white !important;
+    margin: 0 2vw !important;
+  }
+}
+
+::-webkit-scrollbar {
+  width: 5px;
+  height: 5px;
+}
+::-webkit-scrollbar-track {
+  background-color: #4A4A4A;
+}
+::-webkit-scrollbar-thumb {
+  background-color: #B5FFE9;
+  border-radius: 50px;
 }
