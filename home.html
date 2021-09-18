@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Looking for someone to build beautiful websites or webapps? Danial is your guy!">
     <link rel="stylesheet" href="home.css">
     <link
     rel="stylesheet"
@@ -15,19 +16,6 @@
     <title>Danial's Portfolio</title>
 </head>
 <body>
-    <!-- <div class="wrapper">
-        <div class="static-txt animate__animated animate__fadeInLeft">Hi, I'm Danial!</div>
-        <div style="display: flex;">
-            <div class="static-txt animate__animated animate__fadeInLeft">I'm a</div>
-            <ul class="dynamic-txts animate__animated animate__fadeInLeft">
-                <li><span>Web Developer.</span></li>
-                <li><span>UX Designer.</span></li>
-                <li><span>Fast Learner.</span></li>
-                <li><span>Hard Worker.</span></li>
-            </ul>
-        </div>
-    </div> -->
-
     <nav class="navbar is-transparent is-fixed-top animate__animated animate__fadeInLeft" role="navigation" aria-label="main navigation" style="max-width: 100vw;">
         <div class="navbar-brand">
             <a class="navbar-item" href="https://www.youtube.com/watch?v=dQw4w9WgXcQ" target="_blank">
@@ -98,17 +86,43 @@
         </div>
     </div>
     <div id="about-section">
-        <div class="columns is-mobile">
-            <div class="column">
+        <div class="columns is-vcentered" style="margin-top: 10vh;">
+            <div class="column is-one-third" style="text-align: right;">
+                <img src="Face_pic.jpeg" alt="my_face_should_be_here" style="height: 15vw; margin-right: 3vw;">
             </div>
-            <div class="column">sad</div>
+            <div class="column is-two-thirds about-details">
+                <p id="english">Looking for someone to build a website/webapp for your needs? Well look no further! I'm 
+                Danial and I'm a Full-stack Web Developer with a couple years of work experience specializing in Frontend Development and UX Design. I develop mobile responsive
+                websites/webapps and have worked on various projects for different industries. I can also center a div without Googling for it 90% of the time.<br><br>Web Development
+                is like onions, it has layers. - Shrek probably
+                </p>
+                <p id="japanese">あなたのニーズに合わせてウェブサイト/Webアプリを構築する人をお探しですか?まあ、これ以上見て!私はDanialと私はフロントエンド開発とUXデザインに特化した数年の仕
+                事の経験を持つフルスタックのWeb開発者です。モバイルレスポンシブウェブサイト/ウェブアプリを開発し、さまざまな業界向けの様々なプロジェクトに取り組んできました。私はまた、時間の90%の
+                ためにグーグルなしでダイビングを中心にすることができます。<br><br>ウェブ開発はタマネギのようなもので、層があります。 - シュレック-さん たぶん
+                </p>
+            </div>
+        </div>
+        <div class="columns is-vcentered" style="margin-top: 5vh;">
+            <div class="paper pink">
+                <p>Frontend</p>
+                <div class="tape-section"></div>
+            </div>
+            <div class="paper blue">
+                <div class="top-tape"></div>
+                <p>Backend</p>
+            </div>
+            <div class="paper pink">
+                <div class="tape-section"></div>
+                <p>Others</p>
+                <div class="tape-section"></div>
+            </div>
         </div>
     </div>
 </body>
 
 <script>
     // uncomment for netlify
-    if (performance.navigation.type == performance.navigation.TYPE_RELOAD) location.href = 'index';
+    // if (performance.navigation.type == performance.navigation.TYPE_RELOAD) location.href = 'index';
     // if (performance.navigation.type == performance.navigation.TYPE_RELOAD) location.href = 'index.html';
 </script>
 <script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
@@ -117,41 +131,41 @@
 <script src="https://cdn.jsdelivr.net/npm/vanta@0.5.21/dist/vanta.birds.min.js"></script>
 <script>
     VANTA.BIRDS({
-    el: "#birds-bg",
-    mouseControls: true,
-    touchControls: true,
-    gyroControls: false,
-    minHeight: 100.00,
-    minWidth: 100.00,
-    scale: 1.00,
-    scaleMobile: 1.00,
-    backgroundColor: 0x444545,
-    color1: 0xCA7DF9,
-    color2: 0x6369D1,
-    birdSize: 1.50,
-    wingSpan: 25.00,
-    speedLimit: 4.00,
-    separation: 70.00,
-    alignment: 30.00,
-    cohesion: 50.00,
-    quantity: 2.00
+        el: "#birds-bg",
+        mouseControls: true,
+        touchControls: true,
+        gyroControls: false,
+        minHeight: 100.00,
+        minWidth: 100.00,
+        scale: 1.00,
+        scaleMobile: 1.00,
+        backgroundColor: 0x444545,
+        color1: 0xCA7DF9,
+        color2: 0x6369D1,
+        birdSize: 1.50,
+        wingSpan: 25.00,
+        speedLimit: 4.00,
+        separation: 70.00,
+        alignment: 30.00,
+        cohesion: 50.00,
+        quantity: 2.00
     })
 
     var typed = new Typed('#typed', {
-    strings: [
-        "Web Developer",
-        "UX Designer",
-        "Techie"
-    ],
-    stringsElement: null,
-    typeSpeed: 100,
-    backSpeed: 100,
-    smartBackspace: true,
-    loop: true,
-    loopCount: Infinity,
-    showCursor: true,
-    cursorChar: "|",
-    autoInsertCss: true
+        strings: [
+            "Web Developer",
+            "UX Designer",
+            "Techie"
+        ],
+        stringsElement: null,
+        typeSpeed: 100,
+        backSpeed: 100,
+        smartBackspace: true,
+        loop: true,
+        loopCount: Infinity,
+        showCursor: true,
+        cursorChar: "|",
+        autoInsertCss: true
     })
 
     $(document).ready(function() {
@@ -159,6 +173,16 @@
             $(".navbar-burger").toggleClass("is-active");
             $(".navbar-menu").toggleClass("is-active");
         });
+    });
+
+    document.getElementById("english").addEventListener("mouseenter", function(e) {
+        e.target.style.display = "none";
+        document.getElementById("japanese").style.display = "block";
+    });
+
+    document.getElementById("japanese").addEventListener("mouseleave", function(e) {
+        e.target.style.display = "none";
+        document.getElementById("english").style.display = "block";
     });
 </script>
 </html>
