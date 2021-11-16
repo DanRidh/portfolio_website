@@ -70,6 +70,42 @@ body{
   }
 }
 
+@media only screen and (max-width: 992px) {
+  .mobile-face-pic {
+    text-align: center !important;
+  }
+
+  .face-pic {
+    height: 40vw !important;
+  }
+
+  .paper {
+    width: 75% !important;
+  }
+
+  .about-details {
+    max-width: none !important;
+    font-size: 4vw !important;
+    margin-left: 4vw !important;
+    margin-right: 4vw !important;
+  }
+
+  .notes-section-margin {
+    margin-top: 1vh !important;
+  }
+
+  #japanese {
+    font-family: 'Kosugi Maru', sans-serif !important;
+    font-size: 3vw !important;
+    display: none;
+  }
+}
+
+.face-pic {
+  height: 15vw;
+  margin-right: 3vw;
+}
+
 ::-webkit-scrollbar {
   width: 5px;
   height: 5px;
@@ -272,7 +308,7 @@ body{
 
 #japanese {
   font-family: 'Kosugi Maru', sans-serif !important;
-  font-size: 1.22vw !important;
+  font-size: 1.22vw;
   display: none;
 }
 
@@ -307,7 +343,7 @@ body{
       var(--transparent)
     ),
     var(--paper-color);
-  min-width: 250px;
+  min-width: 260px;
   min-height: 30vh;
   display: flex;
   justify-content: center;
@@ -397,4 +433,13 @@ body{
   transform: rotate(45deg);
   left: -4vmin;
   bottom: 0;
+}
+
+.notes-text {
+  font-size: 1.35rem !important;
+  text-align: center
+}
+
+.notes-section-margin {
+  margin-top: 5vh;
 }

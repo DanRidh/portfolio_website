@@ -31,15 +31,15 @@
         
         <div id="navbarBasicExample" class="navbar-menu">
             <div class="navbar-start is-justify-content-center is-flex-grow-1 link-effect">
-                <a class="navbar-item navbar-options" data-hover="Home">
+                <a class="navbar-item navbar-options navbar-burger-item" data-hover="Home" href="#birds-bg">
                     Home
                 </a>
             
-                <a class="navbar-item navbar-options" data-hover="About">
+                <a class="navbar-item navbar-options navbar-burger-item" data-hover="About" href="#about-section">
                     About
                 </a>
 
-                <a class="navbar-item navbar-options" data-hover="Projects">
+                <a class="navbar-item navbar-options navbar-burger-item" data-hover="Projects">
                     Projects
                 </a>
             </div>
@@ -87,10 +87,10 @@
     </div>
     <div id="about-section">
         <div class="columns is-vcentered" style="margin-top: 10vh;">
-            <div class="column is-one-third" style="text-align: right;">
-                <img src="Face_pic.jpeg" alt="my_face_should_be_here" style="height: 15vw; margin-right: 3vw;">
+            <div class="column is-one-third mobile-face-pic" style="text-align: right;">
+                <img src="Face_pic.jpeg" alt="my_face_should_be_here" class="face-pic">
             </div>
-            <div class="column is-two-thirds about-details">
+            <div class="column is-two-thirds-desktop about-details">
                 <p id="english">Looking for someone to build a website/webapp for your needs? Well look no further! I'm 
                 Danial and I'm a Full-stack Web Developer with a couple years of work experience specializing in Frontend Development and UX Design. I develop mobile responsive
                 websites/webapps and have worked on various projects for different industries. I can also center a div without Googling for it 90% of the time.<br><br>Web Development
@@ -102,18 +102,42 @@
                 </p>
             </div>
         </div>
-        <div class="columns is-vcentered" style="margin-top: 5vh;">
+        <div class="columns is-vcentered notes-section-margin" style="margin-top: 5vh;">
             <div class="paper pink">
-                <p>Frontend</p>
+                <div>
+                    <p style="font-weight: bold;">Frontend <br></p>
+                    <p class="notes-text">HTML/CSS/JS <br></p>
+                    <p class="notes-text">React <br></p>
+                    <p class="notes-text">Typescript <br></p>
+                    <p class="notes-text">Django (Jinja) <br></p>
+                    <p class="notes-text">Ionic <br></p>
+                    <p class="notes-text">Ruby on Rails</p>
+                </div>
                 <div class="tape-section"></div>
             </div>
             <div class="paper blue">
                 <div class="top-tape"></div>
-                <p>Backend</p>
+                <div>
+                    <p style="font-weight: bold; text-align: center;">Backend <br></p>
+                    <p class="notes-text">Python <br></p>
+                    <p class="notes-text">Flask <br></p>
+                    <p class="notes-text">Frappe/ERPNext <br></p>
+                    <p class="notes-text">Node.js <br></p>
+                    <p class="notes-text">SQL (postgreSQL & mySQL) <br></p>
+                    <p class="notes-text">Ruby on Rails</p>
+                </div> 
             </div>
             <div class="paper pink">
                 <div class="tape-section"></div>
-                <p>Others</p>
+                <div>
+                    <p style="font-weight: bold; text-align: center;">Others <br></p>
+                    <p class="notes-text">Adobe XD <br></p>
+                    <p class="notes-text">Figma <br></p>
+                    <p class="notes-text">SSH <br></p>
+                    <p class="notes-text">Git <br></p>
+                    <p class="notes-text">Netlify <br></p>
+                    <p class="notes-text">Docker (Portainer)</p>
+                </div> 
                 <div class="tape-section"></div>
             </div>
         </div>
@@ -123,7 +147,7 @@
 <script>
     // uncomment for netlify
     // if (performance.navigation.type == performance.navigation.TYPE_RELOAD) location.href = 'index';
-    // if (performance.navigation.type == performance.navigation.TYPE_RELOAD) location.href = 'index.html';
+    if (performance.navigation.type == performance.navigation.TYPE_RELOAD) location.href = 'index.html';
 </script>
 <script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
 <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
@@ -170,6 +194,13 @@
 
     $(document).ready(function() {
         $(".navbar-burger").click(function() {
+            $(".navbar-burger").toggleClass("is-active");
+            $(".navbar-menu").toggleClass("is-active");
+        });
+    });
+
+    $(document).ready(function() {
+        $(".navbar-burger-item").click(function() {
             $(".navbar-burger").toggleClass("is-active");
             $(".navbar-menu").toggleClass("is-active");
         });
