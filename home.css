@@ -343,7 +343,7 @@ body{
       var(--transparent)
     ),
     var(--paper-color);
-  min-width: 260px;
+  min-width: 280px;
   min-height: 30vh;
   display: flex;
   justify-content: center;
