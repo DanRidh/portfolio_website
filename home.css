@@ -185,7 +185,7 @@ body{
 .wrapper .tooltip {
   position: absolute;
   top: 0;
-  font-size: 14px;
+  font-size: 18px;
   background-color: #ffffff;
   color: #ffffff;
   padding: 5px 8px;
@@ -297,7 +297,7 @@ body{
 
 .birds-tooltip {
   color: whitesmoke;
-  font-size: 1.75vh;
+  font-size: 2vh;
 }
 
 .about-details {
